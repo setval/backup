@@ -1,0 +1,28 @@
+storage:
+  type: 's3'
+  auth:
+    endpoint: 'endpoint'
+    access_key: 'access_key'
+    secret_key: 'secret_key'
+    ssl: true
+
+databases:
+  - testdb1:
+    name: 'testdb1'
+    login: 'root'
+    password: 'root'
+    host: '127.0.0.1'
+    port: 3306
+    driver: 'mysql'
+    tables:
+      - table1
+      - table2
+  - testdb2:
+    name: 'testdb2'
+    login: 'root'
+    password: 'root'
+    host: '127.0.0.1'
+    port: 3306
+    driver: 'mysql'
+    tables:
+      - table2
